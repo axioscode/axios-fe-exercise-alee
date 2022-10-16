@@ -7,7 +7,7 @@ import {
   StoryLink,
   StoryImg,
 } from './StoryStyle'
-import { convertDate } from '../utils/help'
+import { convertDate } from '../utils/helper'
 
 const Story = ({ story }) => {
   const handleRedirect = (href) => {

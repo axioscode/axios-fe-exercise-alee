@@ -6,7 +6,7 @@ export const getContent = async () => {
     const results = response.data.results
     return results
   } catch (error) {
-    console.log(error)
+    console.log(error.message)
     return []
   }
 }

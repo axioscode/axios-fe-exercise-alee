@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Carousel from 'react-multi-carousel'
 import Story from '../components/Story'
-import { getContent } from '../utils/help'
+import { getContent } from '../utils/helper'
 
 const CarouselContainer = () => {
   const [stories, setStories] = useState([])
@@ -20,7 +20,7 @@ const CarouselContainer = () => {
           setStories([...content])
         })
         .catch((error) => {
-          console.log(error)
+          console.log(error.message)
         })
     })
   }, [])
