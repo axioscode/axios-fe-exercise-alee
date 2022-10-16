@@ -1,21 +1,15 @@
-import styled from 'styled-components'
-import Head from 'next/head'
+import CarouselContainer from '../containers/CarouselContainer'
+import HeaderContainer from '../containers/HeaderContainer'
+import { GlobalStyle } from './GlobalStyle'
 
 const Index = () => {
   return (
     <>
-      <Head>
-        <title>Axios Front End Exercise</title>
-      </Head>
-      <div>
-        <Title>Axios Front End Exercise 🚀</Title>
-      </div>
+      <GlobalStyle />
+      <HeaderContainer />
+      <CarouselContainer />
     </>
   )
 }
-
-const Title = styled.h1`
-  color: red;
-`
 
 export default Index
